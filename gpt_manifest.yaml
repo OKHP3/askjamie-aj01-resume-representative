@@ -1,0 +1,56 @@
+---
+# GPT Manifest for AskJamie™ — Résumé Representative
+# This manifest tracks canonical links and versioning for GPT-AJ01
+
+project_name: "AskJamie™ — Résumé Representative"
+project_id: "GPT-AJ01"
+description: "Source-of-truth repository for GPT-AJ01, including versioned prompts, RAG source documents, compiled knowledge packs, test harness, assets, and release notes."
+
+# Version Information
+version:
+  current: "1.0.0"
+  release_date: "2025-12-13"
+  status: "active"
+
+# Canonical Links
+canonical_links:
+  web_page:
+    url: ""
+    description: "Public web page for AskJamie™"
+  
+  custom_gpt_url:
+    url: ""
+    description: "Custom GPT URL on OpenAI platform"
+  
+  project:
+    url: ""
+    description: "Project management/tracking URL"
+  
+  notion:
+    url: ""
+    description: "Notion roadmap and documentation"
+  
+  youtube:
+    url: ""
+    description: "YouTube demos and tutorials"
+  
+  ko_fi:
+    url: ""
+    description: "Ko-fi support page"
+
+# Repository Structure
+repository_structure:
+  knowledge_packs: "Compiled knowledge packs for the GPT"
+  prompts: "Versioned prompt templates and configurations"
+  rag_source: "RAG (Retrieval-Augmented Generation) source documents"
+  tests: "Test harness and validation scripts"
+  assets: "Media assets, images, and resources"
+  docs: "Documentation and guides"
+  releases: "Release notes and changelogs"
+
+# Metadata
+metadata:
+  license: "MIT"
+  repository: "https://github.com/OKHP3/AskJamie-GPT-AJ01"
+  created: "2025-12-13"
+  last_updated: "2025-12-13"
