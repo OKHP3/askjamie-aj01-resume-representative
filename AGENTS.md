@@ -14,7 +14,7 @@ AJ01 — Resume Representative. AI lens presenting Jamie's resume and profession
 [ TODO: Languages, frameworks, key dependencies ]
 
 ## Local Paths
-- **Windows**: `C:\Users\jamie\OKH-Local\Projects\askjamie-aj01-resume-representative`
+- **Windows**: `C:\Users\jamie\OKH-Local\04_GitHub_Mirrors\askjamie-aj01-resume-representative`
 - **Mac**: `/Volumes/OKH-Local/04_GitHub_Mirrors/askjamie-aj01-resume-representative`
 
 ## Key Conventions
