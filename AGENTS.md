@@ -34,3 +34,5 @@ AJ01 — Resume Representative. AI lens presenting Jamie's resume and profession
 
 ---
 *Generated: 2026-06-11 | Source: Notion Routing Hub + Local Scans*
+
+## Imported Claude Cowork project instructions
