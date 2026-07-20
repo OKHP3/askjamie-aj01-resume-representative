@@ -118,6 +118,8 @@ These are repository references and have not been live-validated as part of this
 - The owner should fill the manifest's empty canonical links and correct its stale `AskJamie-GPT-AJ01` repository URL if the manifest is intended to be authoritative.
 - The owner should decide whether `playbook/` and `build/` are still planned, should be renamed to existing directories, or should be removed from the README.
 - No repository-specific branch strategy, naming convention, runtime, test harness, or deployment model is documented. Do not infer one from the current `main` branch alone.
+- `docs/technology-inventory.md` records the technologies evidenced by the checkout and the versions checked against current stable releases.
+- `.github/dependabot.yml` is the repository's dependency tracking mechanism. It currently tracks GitHub Actions references and should be extended when npm, Python, or other package manifests are added.
 
 ## Keeping this guide current
 

@@ -13,3 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CHANGELOG.md
 - gpt_manifest.yaml
 - Directory structure: /src, /prompts, /build, /eval, /ops
+- Technology inventory with current and latest stable version findings
+- Dependabot configuration for weekly GitHub Actions dependency update pull requests
