@@ -1,48 +1,90 @@
-# AskJamie™ — GPT‑AJ01: Résumé Representative  
-**Your résumé, reimagined as an AI agent.**
+# gpt-aj01-askjamie-resume-representative/ — Legacy Folder
 
-GPT‑AJ01 turns a static résumé into a living, conversational career representative that can help draft role‑specific résumés, cover letters, interview answers, and recruiter‑ready talking points — in your voice.
-
-This repo is the **storage + version history** for the GPT‑AJ01 blueprint: system prompts, curated knowledge files, a build & usage playbook, and evaluation tests. It’s designed so you can maintain a **base agent** and create **job‑specific clones** tuned to each opportunity.
-
----
-
-## Canonical links (source of truth)
-- **Lens page (public):** https://askjamie.bot/lens-system/resume-representative/  
-- **Live demo GPT:** https://chatgpt.com/g/g-691fb05c86c881919eec171e62fe1e00-resume-representative-by-askjamietm  
-- **Notion brief (internal):** https://www.notion.so/overkillhill/AJ01-R-sum-Representative-514a9d658325466ca36aba2bb864fd9d  
-- **Support / tips:** https://ko-fi.com/overkillhillp3  
-- **Contact:** contact@askjamie.bot  
+**Status:** Legacy — content mirrored in canonical archive location  
+**Canonical location:** [`archive/aj01-resume-representative/`](../archive/aj01-resume-representative/)  
+**Capability Code:** `aj01`  
+**Family:** Core Capability  
+**Target Repo:** `OKHP3/askjamie-aj01-resume-representative`
 
 ---
 
-## What’s in this repository
-- `prompts/` — instruction architecture: role, tone, guardrails, workflows  
-- `knowledge/` — knowledge starter kit (modern hiring, ATS‑friendly structure, dynamic cover letters, compensation framing, interview prep patterns)  
-- `playbook/` — build & usage guide: how to create your own custom GPT, attach knowledge, test, refine, and share safely  
-- `eval/` — regression prompts + rubrics (quality and drift control)  
-- `build/` — compiled “packs” ready to upload into a Custom GPT (few files, big coverage)  
-- `ops/` — release checklist + maintenance notes
+## What Is This Folder?
+
+This is the original pre-standard home of the **AskJamie™ Résumé Representative**
+(`aj01`) content. It was created before the current FoundRy governance structure
+was in place, using the legacy naming convention:
+
+```
+gpt-aj01-askjamie™-—-résumé-representative/   (original name)
+gpt-aj01-askjamie-resume-representative/       (current name after normalization)
+```
+
+The folder has been preserved at root for historical continuity. The content is
+**identical** to the copy in `archive/aj01-resume-representative/`, which is the
+canonical and actively maintained location.
 
 ---
 
-## Quickstart (build your own résumé representative)
-1) Start with the **base agent**: review `prompts/` and the latest files in `build/`.  
-2) Create a Custom GPT in ChatGPT and upload the `build/` packs as Knowledge.  
-3) Run the tests in `eval/` to verify tone, accuracy, and guardrails.  
-4) For a specific job: provide the job description + company context and generate a tailored résumé, cover letter, and talking points.  
-5) **Clone the agent** per opportunity (rename it per role/company) so each hiring team can interact with the most relevant “version of you.”
+## Contents
+
+| File | Description |
+|---|---|
+| `hr_guidebook_2025.pdf` / `.md` | Comprehensive HR practices guide, 2025 |
+| `hr_knowledgepack_full.pdf` / `.docx` / `.md` | Full HR knowledge pack |
+| `hr_knowledgepack_expanded.pdf` | Extended HR knowledge pack |
+| `hr_comprehensive_knowledgepack_2025.pdf` | Combined comprehensive pack |
+| `dynamic-resume-hybridization.pdf` / `.docx` | Résumé hybridization methodology |
+| `dynamic-cover-letter-hybrid.pdf` / `.docx` | Cover letter hybridization guide |
+| `hybrid-post-covid-hiring.pdf` / `.docx` | Post-COVID hiring landscape analysis |
+| `hiring-history-evolution.pdf` / `.docx` | Evolution of hiring practices |
+| `market-value-compensation-guide.pdf` / `.docx` | Compensation market-value guide |
+| `profile.pdf` | Candidate profile reference |
+| `hr_guidebook_2025-1.pdf` | HR guidebook variant (alternate format) |
 
 ---
 
-## Status
-⚠️ Work‑in‑progress. Sections and flows may move as the AJ01 lens is wired up.
+## Capability Overview
+
+**AJ01 — Résumé Representative** is the first and foundational AskJamie™
+capability. It is a reasoning and conversation system focused on:
+
+- **Dynamic résumé hybridization** — tailoring résumés to specific job descriptions
+- **Cover letter synthesis** — generating targeted, contextual cover letters
+- **HR intelligence** — understanding hiring practices, compensation ranges, and market trends
+- **Candidate market-value guidance** — helping users understand their worth and positioning
+
+The capability was originally deployed as an OpenAI Custom GPT. The knowledge
+documents in this folder form the backbone of that deployment's knowledge pack.
 
 ---
 
-## Privacy & data handling (recommended)
-If you use real career history, **don’t commit sensitive personal data** to a public repo. Use redacted examples here and keep private source files in a private repo or encrypted storage.
+## Relationship to `archive/`
+
+```
+archive/aj01-resume-representative/     ← CANONICAL — use this for all work
+gpt-aj01-askjamie-resume-representative/ ← THIS FOLDER — legacy copy, preserved for history
+```
+
+For active work, graduation planning, or content updates, always use the
+[`archive/aj01-resume-representative/`](../archive/aj01-resume-representative/)
+copy. That folder has the active README with the graduation checklist.
+
+This legacy folder will be consolidated into `archive/` in a future cleanup pass.
 
 ---
 
-© 2025 AskJamie™. All rights reserved.
+## Graduation Status
+
+This capability is registered in [`registry/index.yaml`](../registry/index.yaml)
+as `status: active`, targeting `OKHP3/askjamie-aj01-resume-representative`.
+
+See [`archive/aj01-resume-representative/README.md`](../archive/aj01-resume-representative/README.md)
+for the full graduation checklist.
+
+---
+
+## Related
+
+- [`archive/aj01-resume-representative/`](../archive/aj01-resume-representative/README.md) — canonical archive copy
+- [`registry/index.yaml`](../registry/index.yaml) — registry entry for `aj01`
+- [`_template/`](../_template/ABOUT.md) — scaffold to use when creating the target repo
