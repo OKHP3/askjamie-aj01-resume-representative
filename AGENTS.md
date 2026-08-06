@@ -17,7 +17,11 @@
 
 ## Current status
 
-This is a work-in-progress scaffold. The manifest labels version `1.0.0` as active, but the README says the lens is still being wired up. Treat the README's work-in-progress statement and the actual tree as the stronger implementation signal: the content directories currently contain only `.gitkeep` placeholders, with no prompt packs, knowledge documents, test cases, build outputs, or application code committed.
+This is a work-in-progress scaffold. The repository now contains imported HR,
+resume, hiring, and compensation reference material under `knowledge/`, but it
+does not contain prompt packs, executable tests, build outputs, or application
+code. The manifest status is `work-in-progress` to match the repository
+evidence.
 
 Do not claim that the live GPT, public lens page, or any release process has been verified from this repository. Their URLs are documented references only.
 
@@ -39,10 +43,13 @@ Out of scope unless the project owner explicitly expands it:
 
 ## Repository layout
 
-The current top-level directories are reserved content areas. They contain placeholder files only unless noted otherwise:
+The current top-level directories are organized content areas. They contain
+placeholder files only unless noted otherwise:
 
-- `prompts/`: prompt and instruction material.
-- `knowledge/`: curated knowledge material.
+- `prompts/`: prompt and instruction material, currently placeholder-only.
+- `knowledge/`: curated knowledge material, organized into
+  `human-resources/`, `resume-and-cover-letter/`, and
+  `hiring-and-compensation/`.
 - `rag-source/`: source documents for retrieval-oriented content.
 - `eval/` and `tests/`: evaluation prompts, rubrics, and test material.
 - `ops/`: release and maintenance notes.
@@ -50,12 +57,13 @@ The current top-level directories are reserved content areas. They contain place
 - `docs/`: project documentation.
 - `releases/`: release records.
 - `site/`, `src/`, and `web/`: reserved areas with no implementation currently present.
-- `README.md`: user-facing project description and intended workflow.
+- `README.md`: user-facing project description, current status, and intended workflow.
 - `gpt_manifest.yaml`: project metadata and planned repository structure.
 - `CHANGELOG.md`: change history using Keep a Changelog and Semantic Versioning as the stated conventions.
 - `CLAUDE.md`: pointer to this file; keep it short and do not duplicate this guide.
 
-The README also refers to `playbook/` and `build/`, but those directories are absent from the committed tree. Add or document them only when they are actually introduced.
+The README no longer refers to absent `playbook/` or `build/` directories. Add
+those areas only when they are actually introduced.
 
 ## Intended content flow
 
@@ -114,9 +122,9 @@ These are repository references and have not been live-validated as part of this
 
 ## Known gaps and open questions
 
-- The owner should reconcile the manifest's `active` status with the README's work-in-progress status.
-- The owner should fill the manifest's empty canonical links and correct its stale `AskJamie-GPT-AJ01` repository URL if the manifest is intended to be authoritative.
-- The owner should decide whether `playbook/` and `build/` are still planned, should be renamed to existing directories, or should be removed from the README.
+- The owner should decide whether the broad `.agents/skills/` corpus belongs in this repository or should be maintained in a dedicated skill repository.
+- The owner should decide whether any evaluation workspace checkpoints under `.agents/skills/` are durable evidence or should be archived or removed.
+- The owner should separately review the historical Git presence of `profile.pdf` if public-history removal is required.
 - No repository-specific branch strategy, naming convention, runtime, test harness, or deployment model is documented. Do not infer one from the current `main` branch alone.
 - `docs/technology-inventory.md` records the technologies evidenced by the checkout and the versions checked against current stable releases.
 - `.github/dependabot.yml` is the repository's dependency tracking mechanism. It currently tracks GitHub Actions references and should be extended when npm, Python, or other package manifests are added.
