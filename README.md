@@ -1,48 +1,69 @@
-# AskJamie™ — GPT‑AJ01: Résumé Representative  
-**Your résumé, reimagined as an AI agent.**
-
-GPT‑AJ01 turns a static résumé into a living, conversational career representative that can help draft role‑specific résumés, cover letters, interview answers, and recruiter‑ready talking points — in your voice.
-
-This repo is the **storage + version history** for the GPT‑AJ01 blueprint: system prompts, curated knowledge files, a build & usage playbook, and evaluation tests. It’s designed so you can maintain a **base agent** and create **job‑specific clones** tuned to each opportunity.
-
----
-
-## Canonical links (source of truth)
-- **Lens page (public):** https://askjamie.bot/lens-system/resume-representative/  
-- **Live demo GPT:** https://chatgpt.com/g/g-691fb05c86c881919eec171e62fe1e00-resume-representative-by-askjamietm  
-- **Notion brief (internal):** https://www.notion.so/overkillhill/AJ01-R-sum-Representative-514a9d658325466ca36aba2bb864fd9d  
-- **Support / tips:** https://ko-fi.com/overkillhillp3  
-- **Contact:** contact@askjamie.bot  
-
----
-
-## What’s in this repository
-- `prompts/` — instruction architecture: role, tone, guardrails, workflows  
-- `knowledge/` — knowledge starter kit (modern hiring, ATS‑friendly structure, dynamic cover letters, compensation framing, interview prep patterns)  
-- `playbook/` — build & usage guide: how to create your own custom GPT, attach knowledge, test, refine, and share safely  
-- `eval/` — regression prompts + rubrics (quality and drift control)  
-- `build/` — compiled “packs” ready to upload into a Custom GPT (few files, big coverage)  
-- `ops/` — release checklist + maintenance notes
-
----
-
-## Quickstart (build your own résumé representative)
-1) Start with the **base agent**: review `prompts/` and the latest files in `build/`.  
-2) Create a Custom GPT in ChatGPT and upload the `build/` packs as Knowledge.  
-3) Run the tests in `eval/` to verify tone, accuracy, and guardrails.  
-4) For a specific job: provide the job description + company context and generate a tailored résumé, cover letter, and talking points.  
-5) **Clone the agent** per opportunity (rename it per role/company) so each hiring team can interact with the most relevant “version of you.”
-
----
+# AskJamie GPT-AJ01: Resume Representative
 
 ## Status
-⚠️ Work‑in‑progress. Sections and flows may move as the AJ01 lens is wired up.
 
----
+Work in progress. This repository is a content and configuration scaffold for
+the GPT-AJ01 Resume Representative. It is not a runnable application or
+service, and this repository does not by itself prove that an external GPT,
+public lens, or release process is live.
 
-## Privacy & data handling (recommended)
-If you use real career history, **don’t commit sensitive personal data** to a public repo. Use redacted examples here and keep private source files in a private repo or encrypted storage.
+## Purpose
 
----
+GPT-AJ01 is intended to turn a static resume into a conversational career
+representative that can help with role-specific resumes, cover letters,
+interview answers, and recruiter talking points.
 
-© 2025 AskJamie™. All rights reserved.
+The repository preserves the source material and operating context needed to
+maintain a base agent blueprint, evaluate it, and adapt it for specific hiring
+opportunities.
+
+## Current content
+
+- `knowledge/human-resources/` contains HR guidebooks and knowledge packs in
+  source and export formats.
+- `knowledge/resume-and-cover-letter/` contains resume and cover-letter
+  hybridization guidance.
+- `knowledge/hiring-and-compensation/` contains hiring-history, hybrid-work,
+  and compensation reference material.
+- `prompts/`, `eval/`, `tests/`, `ops/`, and `releases/` are reserved workflow
+  areas. They currently contain placeholders unless files are added.
+- `.agents/skills/` contains repository-local Agent Skills and evaluation
+  material. Its scope is under review because it currently includes skills that
+  are broader than AJ01.
+
+## Intended workflow
+
+The intended content flow is:
+
+`prompts/` plus curated `knowledge/` or `rag-source/` material -> compiled
+knowledge packs -> Custom GPT Knowledge upload -> evaluation and refinement ->
+release record.
+
+This is a documented workflow, not an implemented build system. No build,
+lint, test, or deployment command is currently verified for this repository.
+
+## Privacy
+
+Do not commit unredacted resumes, credentials, contact data, employer material,
+or other sensitive personal information to this public repository. Candidate
+profile material was removed from the current tree during the August 2026
+cleanup; its historical Git presence should be treated as a separate privacy
+review if public-history removal is required.
+
+## References
+
+The following external surfaces are documented references only and have not
+been live-validated in this repository maintenance pass:
+
+- Public lens: <https://askjamie.bot/lens-system/resume-representative/>
+- Demo GPT: <https://chatgpt.com/g/g-691fb05c86c881919eec171e62fe1e00-resume-representative-by-askjamietm>
+- Notion brief: <https://www.notion.so/overkillhill/AJ01-R-sum-Representative-514a9d658325466ca36aba2bb864fd9d>
+- Support: <https://ko-fi.com/overkillhillp3>
+- Contact: <mailto:contact@askjamie.bot>
+
+Related repositories include `askjamie-aj02-professional-portfolio`,
+`askjamie-aj03-enterprise-sleuth`, and `askjamie-aj04-brandguard`.
+
+## License
+
+See `LICENSE` for the repository license.
