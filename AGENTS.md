@@ -122,7 +122,7 @@ These are repository references and have not been live-validated as part of this
 
 ## Known gaps and open questions
 
-- The owner should decide whether the broad `.agents/skills/` corpus belongs in this repository or should be maintained in a dedicated skill repository.
+- Decided 2026-09-18: the broad `.agents/skills/` corpus stays in this repository (owner call). It is a shared Claude-skills workspace, not part of the GPT-AJ01 product content, and unrelated to the resume-representative purpose described above. Do not infer it into the product's scope, evaluation surface, or release records.
 - The owner should decide whether any evaluation workspace checkpoints under `.agents/skills/` are durable evidence or should be archived or removed.
 - The owner should separately review the historical Git presence of `profile.pdf` if public-history removal is required.
 - No repository-specific branch strategy, naming convention, runtime, test harness, or deployment model is documented. Do not infer one from the current `main` branch alone.

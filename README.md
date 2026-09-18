@@ -28,8 +28,9 @@ opportunities.
 - `prompts/`, `eval/`, `tests/`, `ops/`, and `releases/` are reserved workflow
   areas. They currently contain placeholders unless files are added.
 - `.agents/skills/` contains repository-local Agent Skills and evaluation
-  material. Its scope is under review because it currently includes skills that
-  are broader than AJ01.
+  material for a separate, shared Claude-skills workspace. It is intentionally
+  kept in this repository (owner decision, 2026-09-18) but is not part of the
+  GPT-AJ01 product content and is broader than AJ01 in scope.
 
 ## Intended workflow
 
