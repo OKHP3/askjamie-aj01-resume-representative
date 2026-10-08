@@ -132,3 +132,5 @@ These are repository references and have not been live-validated as part of this
 ## Keeping this guide current
 
 Update this file when a real prompt/knowledge pipeline, test command, build process, application surface, deployment target, or durable repository convention is added. Keep confirmed facts separate from inferences, and retain unresolved questions until repository evidence or owner input resolves them.
+
+## Imported Claude Cowork project instructions
