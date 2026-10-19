@@ -1,5 +1,20 @@
 # AskJamie GPT-AJ01: Resume Representative
 
+## FoundRy source consolidation, 2026-10-19
+
+Capability development continues in [AskJamie FoundRy](https://github.com/OKHP3/askjamie-foundry/tree/main/capabilities/askjamie-aj01-resume-representative).
+The complete 392-file source snapshot at `6744330681e0ddc55d6542aaa783cb9944df3092`
+is preserved unchanged under its `origin/repository/` folder, with per-file
+hashes and provenance. [Source consolidation PR #59](https://github.com/OKHP3/askjamie-foundry/pull/59) is merged.
+
+This repository remains available as the standalone migration source. Route
+new capability development to FoundRy. Local/Replit state, configured GPT
+capture, component reuse rights, portable skill conversion and host acceptance
+remain tracked in [migration issue #58](https://github.com/OKHP3/askjamie-foundry/issues/58).
+Existing website and GPT entry points remain the access references while that
+work proceeds. This notice does not announce a functioning replacement or
+retirement. The previous standalone documentation follows unchanged.
+
 ## Status
 
 Work in progress. This repository is a content and configuration scaffold for
