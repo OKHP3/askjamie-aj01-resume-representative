@@ -22,6 +22,12 @@ canonical_links:
     url: "https://chatgpt.com/g/g-691fb05c86c881919eec171e62fe1e00-resume-representative-by-askjamietm"
     description: "Custom GPT URL on OpenAI platform"
   
+  foundry_capability:
+    url: "https://github.com/OKHP3/askjamie-foundry/tree/main/capabilities/askjamie-aj01-resume-representative"
+    description: "Canonical home for new capability development"
+  migration_issue:
+    url: "https://github.com/OKHP3/askjamie-foundry/issues/58"
+    description: "Remaining source and platform migration work"
   project:
     url: ""
     description: "Project management/tracking URL"
