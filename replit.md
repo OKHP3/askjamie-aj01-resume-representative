@@ -4,7 +4,9 @@
 
 This is a documentation and prompt repository for a custom AI agent (GPT) designed to represent a user's professional background. It is NOT a runnable web application.
 
-The project serves as the source of truth for:
+New capability development continues in the [AskJamie FoundRy capability](https://github.com/OKHP3/askjamie-foundry/tree/main/capabilities/askjamie-aj01-resume-representative). This repository remains available as the standalone migration source. Local/Replit state, configured GPT capture, component reuse rights, portable skill conversion, and host acceptance remain tracked in [migration issue #58](https://github.com/OKHP3/askjamie-foundry/issues/58).
+
+The project preserves the source material for:
 - AI agent system prompts (`prompts/`)
 - Knowledge base documents (`knowledge/`, `rag-source/`)
 - Evaluation tests and rubrics (`eval/`)
